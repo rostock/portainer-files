@@ -1,2 +1,2 @@
-# portainer-files
-Template and Docker Compose files for Portainer
+# *Portainer* files
+Template and *Docker Compose* files for *Portainer*
