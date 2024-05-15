@@ -1,0 +1,38 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 3,
+      "title": "Archikart ALKIS",
+      "name": "archikart-alkis",
+      "note": "<b>Archikart ALKIS</b>",
+      "description": "Archikart ALKIS and PostGIS by Archikart Software AG",
+      "platform": "linux",
+      "logo": "https://www.archikart.de/system/modules/de.archikart.homepage/resources/img/logo.png",
+      "repository": {
+        "url": "https://github.com/rostock/portainer-files",
+        "stackfile": "docker-compose.archikart-alkis.yaml"
+      },
+      "env": [
+        {
+          "name": "IMAGE_HOST",
+          "label": "Image host",
+          "default": "localhost:5005",
+          "description": "Host for Docker images"
+        },
+        {
+          "name": "MAIN_PORT",
+          "label": "Main port",
+          "default": "10722",
+          "description": "Port for communication with ALKIS instance"
+        },
+        {
+          "name": "DB_PORT",
+          "label": "Database Port",
+          "default": "15432",
+          "description": "Port for communication with database"
+        }
+      ]
+    }
+  ]
+}
