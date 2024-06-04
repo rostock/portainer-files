@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   alkis:
-    image: '${IMAGE_HOST}/vendor/archikart-alkis:latest'
+    image: 'docker.archikart.de/archikart/alkis_gid7_v77:latest'
     ports:
       - ${MAIN_PORT}:22
     networks:
@@ -14,7 +14,7 @@ services:
     links:
       - 'postgis:archikart-postgis'
   postgis:
-    image: '${IMAGE_HOST}/vendor/archikart-postgis:latest'
+    image: 'docker.archikart.de/archikart/alkis_postgis_v77:latest'
     ports:
       - ${DB_PORT}:5432
     networks:

@@ -15,12 +15,6 @@
       },
       "env": [
         {
-          "name": "IMAGE_HOST",
-          "label": "Image host",
-          "default": "localhost:5005",
-          "description": "Host for Docker images"
-        },
-        {
           "name": "MAIN_PORT",
           "label": "Main port",
           "default": "10722",
