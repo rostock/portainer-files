@@ -1,7 +1,7 @@
 services:
   alkis:
     image: 'docker.archikart.de/archikart/alkis_gid7_v78:latest'
-    container_name: alkis
+    container_name: archikart-alkis_alkis
     ports:
       - ${MAIN_PORT}:22
     networks:
@@ -15,7 +15,7 @@ services:
       - 'postgis:archikart-postgis'
   postgis:
     image: 'docker.archikart.de/archikart/alkis_postgis_v78:latest'
-    container_name: postgis
+    container_name: archikart-alkis_postgis
     ports:
       - ${DB_PORT}:5432
     networks:
