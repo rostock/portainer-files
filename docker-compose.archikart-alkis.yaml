@@ -7,7 +7,7 @@ services:
     networks:
       - alkis-net
     volumes:
-      - alkis-filestore:/root/archikart/alkis/filestore
+      - 'alkis-filestore:/root/archikart/alkis/filestore'
     depends_on:
       - postgis
     restart: unless-stopped
@@ -21,7 +21,7 @@ services:
     networks:
       - alkis-net
     volumes:
-      - pg-data:/var/lib/postgresql/data
+      - 'pg-data:/var/lib/postgresql/data'
     environment:
       POSTGRES_PASSWORD: archikart
     restart: unless-stopped

@@ -27,6 +27,18 @@
           "description": "Port for communication with database"
         }
       ]
+    }, {
+      "type": 3,
+      "title": "GitLab Runner",
+      "name": "gitlab-runner",
+      "note": "<b>GitLab Runner</b>",
+      "description": "GitLab Runner by GitLab",
+      "platform": "linux",
+      "logo": "https://images.ctfassets.net/xz1dnu24egyd/1hnQd13UBU7n5V0RsJcbP3/769692e40a6d528e334b84f079c1f577/gitlab-logo-100.png",
+      "repository": {
+        "url": "https://github.com/rostock/portainer-files",
+        "stackfile": "docker-compose.gitlab-runner.yaml"
+      }
     }
   ]
 }
