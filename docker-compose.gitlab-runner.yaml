@@ -1,6 +1,6 @@
 services:
   gitlab-runner:
-    image: 'gitlab/gitlab-runner:v17.4.0'
+    image: 'gitlab/gitlab-runner:v17.5.0'
     container_name: gitlab-runner
     volumes:
       - '/etc/gitlab-runner:/etc/gitlab-runner'
